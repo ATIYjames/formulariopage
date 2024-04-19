@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="formulario-container">
+        <h1>FORMULARIO TRIPWARE - UHC</h1>
+        <iframe width="672" height="385" src="https://www.youtube.com/embed/3HmptgM7s5A?si=0ai3LuyNTss180Oe?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <form onsubmit="agregarUsuario(event)">
+            <!--nombres y apellidos -->
+            <div class="separacion">
+                <label for="nombre">Nombre</label> 
+                <input type="text" id="nombre" name="nombre" required><br>
+                <label for="apellido">Apellido</label> 
+                <input type="text" id="apellido" name="apellido" required><br>
+            </div>
+            <!-- Genero-->
+            <div class="separacion">
+                <label for="genero">Sexo  |</label> 
+                <input type="radio" id="generoHombre" name="genero" value="hombre">
+                <label for="generoHombre">Hombre</label>
+                <input type="radio" id="generoMujer" name="genero" value="mujer">
+                <label for="generoMujer">Mujer</label><br>  
+            </div>
+            
+            <!--Correo -->
+            <div class="separacion">
+                <label for="email">Correo</label> 
+                <input type="email" id="email" name="email" required><br>
+            </div>             
+            <!--Caja y opciones  -->
+            <div class="separacion">
+                <label for="poblacion">Poblacion</label> 
+                <select name="poblacion" id="poblacion">
+                    <option value="comas">Comas</option>
+                    <option value="puentepiedra">Puentepiedra</option>
+                    <option value="losolivos">Losolivos</option>
+                    <option value="callao">Callao</option>
+            </div>
+            </select><br>
+            <!--descripcion  -->
+            <div class="separacion">
+                <label for="descripcion">Descripcion:</label> 
+                <textarea name="descripcion" id="descripcion" cols="60" rows="8"></textarea><br> 
+            </div>
+            <!--opciones marcadas  -->
+            <div class="separacion">
+                <input type="checkbox" id="op1" checked>
+                <label for="op1">Deseo recibir información sobre novedades y ofertas</label><br> 
+                <input type="checkbox" id="op2">
+                <label for="op2">Declaro haber leído y aceptar las condiciones generales del programa y la normativa sobre protección de datos</label><br> 
+                <input type="submit">
+            </div>   
+        </form>
+        <!-- boton eliminar usuario q envia al jseliminarultimousuario -->
+        <button class="btn danger" onclick="eliminarUltimoUsuario()">Eliminar</button>
+        <!-- parrafos creeados de js -->
+        <div id="usuariosParrafo"></div>       
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
