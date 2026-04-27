@@ -1,0 +1,44 @@
+{
+  "title": "Microservicios en AWS: EC2, RDS, S3 e IAM con KillerCoda",
+  "description": "Implementación práctica de servicios AWS para modernizar la infraestructura de una empresa peruana de bordados computarizados. Usamos LocalStack para simular AWS en un entorno sandbox.",
+  "difficulty": "intermediate",
+  "time": "30",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Paso 1: Configuración del entorno AWS",
+        "text": "step1.md",
+        "verify": "verify1.sh"
+      },
+      {
+        "title": "Paso 2: Implementación de Base de Datos (RDS / MySQL)",
+        "text": "step2.md",
+        "verify": "verify2.sh"
+      },
+      {
+        "title": "Paso 3: Almacenamiento de Objetos (S3)",
+        "text": "step3.md",
+        "verify": "verify3.sh"
+      },
+      {
+        "title": "Paso 4: Seguridad y Accesos (IAM)",
+        "text": "step4.md",
+        "verify": "verify4.sh"
+      },
+      {
+        "title": "Paso 5: Validación de la Infraestructura",
+        "text": "step5.md",
+        "verify": "verify5.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
